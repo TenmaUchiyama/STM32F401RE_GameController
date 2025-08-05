@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RT5760CHGH6F'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "RICHTEK", "RT5760CHGH6F" (!) = "", "SOTFL50P160X60-6N", "SO Transistor Flat Lead", "", "", "", "", "Switching Voltage Regulators 6V 1A, ACOT Buck Converter in Thin SOT-563 Package", "https://www.mouser.com.tr/datasheet/2/1458/DS5760ABCD_04-3104683.pdf", "0.6 mm"
+END_PART
+
+END.

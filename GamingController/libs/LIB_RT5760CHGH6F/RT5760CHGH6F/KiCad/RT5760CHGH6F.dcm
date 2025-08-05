@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RT5760CHGH6F
+D Switching Voltage Regulators 6V 1A, ACOT Buck Converter in Thin SOT-563 Package
+K
+F https://www.mouser.com.tr/datasheet/2/1458/DS5760ABCD_04-3104683.pdf
+$ENDCMP
+#
+#End Doc Library

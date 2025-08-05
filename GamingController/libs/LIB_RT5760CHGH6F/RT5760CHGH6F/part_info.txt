@@ -1,0 +1,9 @@
+Manufacturer=RICHTEK
+PartNumber=RT5760CHGH6F
+PartCategory=Integrated Circuit
+PackageCategory=SO Transistor Flat Lead
+PinCount=6
+Version=1.1
+Released=2025-01-31 03:40:42
+Downloaded=2025-08-04 07:49:37
+3D=Y

@@ -1,0 +1,18 @@
+.RT5760CHGH6F :1 ;Switching Voltage Regulators 6V 1A, ACOT Buck Converter in Thin SOT-563 Package
+SOTFL50P160X60-6N
+*STM IC
+*NGS
+*PLB 1="FB" 2="GND" 3="VIN" 4="SW" 5="EN" 6="NC"
+*MXP 6
+*DFN RT5760CHGH6F
+~!Manufacturer_Name (RICHTEK)
+~!Manufacturer_Part_Number (RT5760CHGH6F)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://www.mouser.com.tr/datasheet/2/1458/DS5760ABCD_04-3104683.pdf)
+~!Height (0.6mm)
+~!3D_Model (RT5760CHGH6F)
+RT5760CHGH6F
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 

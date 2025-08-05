@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "RT5760CHGH6F"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-01-31-03:40:42)
+    (mountForm default
+        (footprintRef "SOTFL50P160X60-6N")
+        (spec "System")
+    )
+)
