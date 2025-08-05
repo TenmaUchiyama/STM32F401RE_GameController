@@ -9090,8 +9090,8 @@
 		)
 	)
 	(sheet
-		(at 210.185 125.095)
-		(size 32.385 21.59)
+		(at 197.485 102.87)
+		(size 59.69 38.735)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9106,7 +9106,7 @@
 		)
 		(uuid "8c7c828c-f0a4-4a12-a4f4-414f08c1d01f")
 		(property "Sheetname" "User Interface"
-			(at 210.185 124.3834 0)
+			(at 197.485 102.1584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9115,7 +9115,7 @@
 			)
 		)
 		(property "Sheetfile" "user_interface.kicad_sch"
-			(at 210.185 147.2696 0)
+			(at 197.485 142.1896 0)
 			(effects
 				(font
 					(size 1.27 1.27)

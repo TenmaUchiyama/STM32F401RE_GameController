@@ -5,34 +5,37 @@
 	(uuid "ccde6993-bc96-4d4a-ae69-bce82a7cc89c")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -49,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -58,7 +61,145 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,12 +217,12 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "R_Small_0_1"
 				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
 					(stroke
-						(width 0.254)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -89,10 +230,10 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_Small_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+					(at 0 2.54 270)
+					(length 0.762)
 					(name "~"
 						(effects
 							(font
@@ -109,9 +250,159 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
+					(at 0 -2.54 90)
+					(length 0.762)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -780,9 +1071,33 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "DPADs"
+		(exclude_from_sim no)
+		(at 139.954 52.324 0)
+		(effects
+			(font
+				(face "Meiryo UI")
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "259595a9-cf5a-415a-baa7-86dca92f02ca")
+	)
+	(text "Buttons"
+		(exclude_from_sim no)
+		(at 139.954 23.114 0)
+		(effects
+			(font
+				(face "Meiryo UI")
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "2cd831b0-d9a5-480c-8415-cd6307b24c9f")
+	)
 	(text "Thumbstick Right"
 		(exclude_from_sim no)
-		(at 33.528 23.876 0)
+		(at 55.118 23.876 0)
 		(effects
 			(font
 				(face "Meiryo UI")
@@ -792,9 +1107,21 @@
 		)
 		(uuid "4c7ab462-870d-42ca-9014-572e261a85f9")
 	)
+	(text "UtilBtns"
+		(exclude_from_sim no)
+		(at 139.954 90.424 0)
+		(effects
+			(font
+				(face "Meiryo UI")
+				(size 2.032 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "55a78896-1df6-4dcd-9dc1-39c6af6251bc")
+	)
 	(text "Thumbstick Left"
 		(exclude_from_sim no)
-		(at 34.798 67.056 0)
+		(at 56.388 67.056 0)
 		(effects
 			(font
 				(face "Meiryo UI")
@@ -805,104 +1132,214 @@
 		(uuid "f8fea299-2f9b-40e7-a5ba-628e49cfd914")
 	)
 	(junction
-		(at 80.01 33.02)
+		(at 194.31 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4a3c1b11-7fbf-47e0-9d11-37bae134af16")
+		(uuid "0b9a9b22-7b6d-4962-8d85-ace8e9a64fd4")
 	)
 	(junction
-		(at 35.56 43.18)
+		(at 160.02 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d842412-b670-410c-9f16-d9a927b62353")
+	)
+	(junction
+		(at 160.02 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15bf0245-a17a-4bb0-868f-193cd16ec3ad")
+	)
+	(junction
+		(at 256.54 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fbd57a8-95a6-472f-8df6-b8c98b72e8d7")
+	)
+	(junction
+		(at 39.37 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3195366d-0abd-4891-bc4e-edd039dffbd5")
+	)
+	(junction
+		(at 228.6 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32ec47e6-374e-4230-a9d2-aa7bd2343be1")
+	)
+	(junction
+		(at 228.6 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45691e81-a015-4071-87ab-04ae91cf655c")
+	)
+	(junction
+		(at 57.15 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ef568cc-f8be-4b58-9c3c-51ca8dd67085")
 	)
 	(junction
-		(at 74.93 35.56)
+		(at 39.37 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "730cddc3-18d0-4e34-9a0d-2bf603a8b0e9")
+	)
+	(junction
+		(at 96.52 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74d29883-d205-4806-be4c-dcaf69f062e1")
 	)
 	(junction
-		(at 74.93 33.02)
+		(at 261.62 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79201bc0-e1bf-4cec-8e0d-68f3e8f9aa99")
+	)
+	(junction
+		(at 194.31 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "800a5731-6302-4c78-a747-6a4b53650254")
+	)
+	(junction
+		(at 160.02 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91dcd459-95e0-4ca9-90a5-d987dcbed68b")
+	)
+	(junction
+		(at 101.6 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "932e7dc9-5115-425a-b1af-0bd130f734db")
+	)
+	(junction
+		(at 189.23 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "968ea3ff-68f9-440c-86ea-d54833457fb5")
+	)
+	(junction
+		(at 39.37 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a19c5912-74da-40d7-829e-0a342620425f")
+	)
+	(junction
+		(at 96.52 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b44092ff-8aad-47ff-829c-0c4853b46649")
 	)
 	(junction
-		(at 36.83 86.36)
+		(at 58.42 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bcfce776-281d-44fd-a55d-944f327a5abb")
 	)
 	(junction
-		(at 77.47 76.2)
+		(at 99.06 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4e091b4-8889-4a64-b21d-202790a11dfa")
 	)
 	(junction
-		(at 77.47 78.74)
+		(at 39.37 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2ed375f-6241-4cc7-b14d-cd16ee776af7")
+	)
+	(junction
+		(at 99.06 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb98b0a1-84d7-4f3c-ae4e-9832394e94db")
 	)
 	(junction
-		(at 82.55 76.2)
+		(at 228.6 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f012348f-0aa3-4614-ab52-9025119d36e6")
+	)
+	(junction
+		(at 104.14 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f94dae78-9ff3-4da6-8e5e-66ae9ce18ac0")
 	)
 	(no_connect
-		(at 68.58 48.26)
+		(at 90.17 48.26)
 		(uuid "18b540e5-9993-45a9-a36a-552f7bf8f698")
 	)
 	(no_connect
-		(at 69.85 93.98)
+		(at 91.44 93.98)
 		(uuid "1cb7cda3-64bb-4f86-ac2c-103cfd545f5f")
 	)
 	(no_connect
-		(at 69.85 83.82)
+		(at 91.44 83.82)
 		(uuid "2c6a73fb-cf55-4ada-a73a-a840c01ee018")
 	)
 	(no_connect
-		(at 68.58 40.64)
+		(at 90.17 40.64)
 		(uuid "3b6b7aef-46dd-40c5-ac56-0b6c09478194")
 	)
 	(no_connect
-		(at 68.58 50.8)
+		(at 90.17 50.8)
 		(uuid "613ef5a1-3212-48b7-ab04-59b7780ea89a")
 	)
 	(no_connect
-		(at 69.85 88.9)
+		(at 91.44 88.9)
 		(uuid "706a7627-4399-4452-bf2c-181add58f3a1")
 	)
 	(no_connect
-		(at 69.85 91.44)
+		(at 91.44 91.44)
 		(uuid "837a9a14-651c-4414-8ae2-44cffc417f46")
 	)
 	(no_connect
-		(at 68.58 43.18)
+		(at 90.17 43.18)
 		(uuid "8f8a63ac-a274-440d-a5bb-277f53b7c099")
 	)
 	(no_connect
-		(at 69.85 81.28)
+		(at 91.44 81.28)
 		(uuid "b0aaff1e-49f4-41a9-a0fc-fc1f607e9d01")
 	)
 	(no_connect
-		(at 69.85 86.36)
+		(at 91.44 86.36)
 		(uuid "e0c96789-2253-490b-bfde-edba890dd121")
 	)
 	(no_connect
-		(at 68.58 45.72)
+		(at 90.17 45.72)
 		(uuid "f3f22bb2-001a-4447-aeef-678f86482e76")
 	)
 	(no_connect
-		(at 68.58 38.1)
+		(at 90.17 38.1)
 		(uuid "f486366b-b47f-42db-8422-4f060d769540")
 	)
 	(wire
 		(pts
-			(xy 31.75 81.28) (xy 44.45 81.28)
+			(xy 228.6 34.29) (xy 228.6 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01534d75-d8f6-4855-ae39-f4f529eb1608")
+	)
+	(wire
+		(pts
+			(xy 209.55 96.52) (xy 209.55 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "026347c5-9033-454c-a268-ca3690a8345c")
+	)
+	(wire
+		(pts
+			(xy 29.21 81.28) (xy 39.37 81.28)
 		)
 		(stroke
 			(width 0)
@@ -912,7 +1349,17 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 33.02) (xy 74.93 33.02)
+			(xy 194.31 101.6) (xy 194.31 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "037b363e-400f-4fe9-938e-4be7bd016e51")
+	)
+	(wire
+		(pts
+			(xy 90.17 33.02) (xy 96.52 33.02)
 		)
 		(stroke
 			(width 0)
@@ -922,7 +1369,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 78.74) (xy 77.47 83.82)
+			(xy 99.06 78.74) (xy 99.06 83.82)
 		)
 		(stroke
 			(width 0)
@@ -932,7 +1379,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 33.02) (xy 85.09 33.02)
+			(xy 96.52 33.02) (xy 101.6 33.02)
 		)
 		(stroke
 			(width 0)
@@ -942,7 +1389,17 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 88.9) (xy 44.45 88.9)
+			(xy 189.23 68.58) (xy 189.23 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "098514b3-bd3c-46b3-9cfe-42019823af98")
+	)
+	(wire
+		(pts
+			(xy 58.42 88.9) (xy 66.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -952,7 +1409,37 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 86.36) (xy 36.83 88.9)
+			(xy 237.49 58.42) (xy 237.49 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bae5df1-18fe-4ea4-9e4d-3c43a4b6bb64")
+	)
+	(wire
+		(pts
+			(xy 256.54 63.5) (xy 256.54 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e71b798-d3b3-4eb9-b44f-3d398f2656d2")
+	)
+	(wire
+		(pts
+			(xy 209.55 69.85) (xy 218.44 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f947730-b617-40fb-86ed-fc442696e00d")
+	)
+	(wire
+		(pts
+			(xy 58.42 86.36) (xy 58.42 88.9)
 		)
 		(stroke
 			(width 0)
@@ -962,7 +1449,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 78.74) (xy 81.28 78.74)
+			(xy 99.06 78.74) (xy 102.87 78.74)
 		)
 		(stroke
 			(width 0)
@@ -972,7 +1459,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 76.2) (xy 82.55 76.2)
+			(xy 101.6 33.02) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16f52377-a0b4-4ec5-8f6b-51d1ab7ae419")
+	)
+	(wire
+		(pts
+			(xy 99.06 76.2) (xy 104.14 76.2)
 		)
 		(stroke
 			(width 0)
@@ -982,7 +1479,17 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 48.26) (xy 43.18 48.26)
+			(xy 261.62 40.64) (xy 261.62 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f0a7c38-c0a8-47c6-b15a-0e30018a349c")
+	)
+	(wire
+		(pts
+			(xy 27.94 48.26) (xy 39.37 48.26)
 		)
 		(stroke
 			(width 0)
@@ -992,7 +1499,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 30.48) (xy 74.93 33.02)
+			(xy 96.52 30.48) (xy 96.52 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1002,7 +1509,27 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 78.74) (xy 77.47 78.74)
+			(xy 228.6 101.6) (xy 233.68 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28fa16df-e3e9-41fb-9d23-2e02ab570a48")
+	)
+	(wire
+		(pts
+			(xy 209.55 101.6) (xy 218.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a93b688-32d6-4ac8-8e70-59b46d1b1f9d")
+	)
+	(wire
+		(pts
+			(xy 91.44 78.74) (xy 99.06 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1012,7 +1539,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 74.93) (xy 82.55 76.2)
+			(xy 242.57 34.29) (xy 251.46 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32af1f6d-71ca-46aa-a83c-0d5be4684eee")
+	)
+	(wire
+		(pts
+			(xy 104.14 73.66) (xy 104.14 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1022,17 +1559,77 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 43.18) (xy 35.56 43.18)
+			(xy 256.54 63.5) (xy 261.62 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "506977ef-9892-43e9-87a1-dff41f2aa912")
+		(uuid "39c55c11-d303-4364-8864-c703ef3dc107")
 	)
 	(wire
 		(pts
-			(xy 35.56 43.18) (xy 35.56 45.72)
+			(xy 194.31 34.29) (xy 194.31 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fc02526-9788-4975-9e3d-888c5b86d31f")
+	)
+	(wire
+		(pts
+			(xy 101.6 30.48) (xy 101.6 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48321873-17a1-40f6-8985-4ed9afc87ab0")
+	)
+	(wire
+		(pts
+			(xy 39.37 91.44) (xy 66.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486b930f-5e07-4bac-aa69-25c633224fa9")
+	)
+	(wire
+		(pts
+			(xy 104.14 68.58) (xy 104.14 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49acaaac-4c9a-407d-8f8e-bb342ee9e157")
+	)
+	(wire
+		(pts
+			(xy 209.55 64.77) (xy 209.55 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a7598ae-c0a6-44ff-98d3-1b1f2f23f38f")
+	)
+	(wire
+		(pts
+			(xy 160.02 102.87) (xy 160.02 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bf91d91-823d-47e8-a6cb-2a659798cefb")
+	)
+	(wire
+		(pts
+			(xy 57.15 43.18) (xy 57.15 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1042,7 +1639,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 73.66) (xy 77.47 76.2)
+			(xy 175.26 96.52) (xy 175.26 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "532675ea-92e9-4acf-b7e5-531e022756b4")
+	)
+	(wire
+		(pts
+			(xy 99.06 73.66) (xy 99.06 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1052,7 +1659,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 40.64) (xy 43.18 40.64)
+			(xy 57.15 40.64) (xy 64.77 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1062,7 +1669,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 78.74) (xy 44.45 78.74)
+			(xy 64.77 78.74) (xy 66.04 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1072,17 +1679,47 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 33.02) (xy 80.01 33.02)
+			(xy 160.02 74.93) (xy 160.02 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e3403fd-b75b-4766-a884-1ce9dc7faeb2")
+		(uuid "5d9d21cb-c183-4c60-97ae-f5c978b16eea")
 	)
 	(wire
 		(pts
-			(xy 31.75 91.44) (xy 44.45 91.44)
+			(xy 228.6 107.95) (xy 228.6 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60221ba3-24b1-4731-9093-3f91d28cab5f")
+	)
+	(wire
+		(pts
+			(xy 160.02 68.58) (xy 160.02 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61da12a5-5cc9-4d99-aa6a-f6e071908762")
+	)
+	(wire
+		(pts
+			(xy 160.02 109.22) (xy 160.02 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6872d11d-81ff-4139-8045-693c4b1a3387")
+	)
+	(wire
+		(pts
+			(xy 29.21 91.44) (xy 39.37 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1092,17 +1729,47 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 38.1) (xy 43.18 38.1)
+			(xy 194.31 34.29) (xy 199.39 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "73bffe15-b553-47e6-ae8d-ad4a4fcd2809")
+		(uuid "70af0fbf-3694-4e50-b010-23e760f7f669")
 	)
 	(wire
 		(pts
-			(xy 35.56 86.36) (xy 36.83 86.36)
+			(xy 189.23 62.23) (xy 194.31 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d3eb0e-e98e-484a-ac71-5694eaeb1100")
+	)
+	(wire
+		(pts
+			(xy 27.94 38.1) (xy 39.37 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70f9b315-0e53-4eb1-927f-0427396a5049")
+	)
+	(wire
+		(pts
+			(xy 39.37 38.1) (xy 64.77 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7686e4d3-6cfb-4d5b-b674-138fae4bf6f5")
+	)
+	(wire
+		(pts
+			(xy 57.15 86.36) (xy 58.42 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1112,7 +1779,47 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 35.56) (xy 74.93 35.56)
+			(xy 140.97 102.87) (xy 149.86 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e45991-c5e7-4583-b53b-252c9b9a8635")
+	)
+	(wire
+		(pts
+			(xy 54.61 43.18) (xy 57.15 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d298d72-736c-498b-bf6e-a88950970040")
+	)
+	(wire
+		(pts
+			(xy 256.54 69.85) (xy 256.54 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ecf3140-f89e-44c7-bfdd-7153d3724208")
+	)
+	(wire
+		(pts
+			(xy 39.37 81.28) (xy 66.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82fd5bc7-8fb4-4e2e-befe-de81d72af440")
+	)
+	(wire
+		(pts
+			(xy 90.17 35.56) (xy 96.52 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1122,7 +1829,37 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 35.56) (xy 43.18 35.56)
+			(xy 194.31 40.64) (xy 194.31 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85116169-fe4b-4395-a43d-bfc9e3b2434c")
+	)
+	(wire
+		(pts
+			(xy 140.97 68.58) (xy 149.86 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eb049bb-f1e1-4481-906d-5db048d48068")
+	)
+	(wire
+		(pts
+			(xy 209.55 34.29) (xy 218.44 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8faac13f-49f5-457c-9466-8af22fdb17c7")
+	)
+	(wire
+		(pts
+			(xy 63.5 35.56) (xy 64.77 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1132,7 +1869,27 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 76.2) (xy 90.17 76.2)
+			(xy 163.83 68.58) (xy 160.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b8f2b1-96dc-45a8-a87c-6175aed2b90c")
+	)
+	(wire
+		(pts
+			(xy 242.57 29.21) (xy 242.57 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ea6fb0-82d6-4966-935e-7b14858d32f5")
+	)
+	(wire
+		(pts
+			(xy 104.14 76.2) (xy 111.76 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1142,7 +1899,17 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 40.64) (xy 35.56 43.18)
+			(xy 237.49 63.5) (xy 246.38 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f4690ca-9cd8-4106-93a8-3bb900dab305")
+	)
+	(wire
+		(pts
+			(xy 57.15 40.64) (xy 57.15 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1152,7 +1919,47 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 35.56) (xy 74.93 40.64)
+			(xy 160.02 35.56) (xy 165.1 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a36d60a2-e572-4f31-bfad-ff62ff2c564e")
+	)
+	(wire
+		(pts
+			(xy 39.37 48.26) (xy 64.77 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48d06ac-4e04-4eb5-9e8e-2d7e67a4886b")
+	)
+	(wire
+		(pts
+			(xy 209.55 29.21) (xy 209.55 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a651fb53-d727-4b71-ae06-443d4902fd1b")
+	)
+	(wire
+		(pts
+			(xy 140.97 30.48) (xy 140.97 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a68f1a15-8803-4f31-a38b-03c4aa5a7cee")
+	)
+	(wire
+		(pts
+			(xy 96.52 35.56) (xy 96.52 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1162,7 +1969,27 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 83.82) (xy 36.83 86.36)
+			(xy 194.31 107.95) (xy 194.31 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac336a31-d828-4405-afe1-f309d13e7578")
+	)
+	(wire
+		(pts
+			(xy 228.6 34.29) (xy 233.68 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b403608e-1106-414d-aaec-1eee36d19f43")
+	)
+	(wire
+		(pts
+			(xy 58.42 83.82) (xy 58.42 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1172,7 +1999,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 45.72) (xy 43.18 45.72)
+			(xy 57.15 45.72) (xy 64.77 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1182,7 +2009,47 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 35.56) (xy 78.74 35.56)
+			(xy 228.6 69.85) (xy 228.6 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9799da4-024c-4e1f-97e5-b38aba1b155a")
+	)
+	(wire
+		(pts
+			(xy 175.26 34.29) (xy 184.15 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baaee3b5-d5be-4129-bb6b-8ceab32f72e4")
+	)
+	(wire
+		(pts
+			(xy 140.97 63.5) (xy 140.97 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb3b0834-6cde-4303-a03a-668acad1fee9")
+	)
+	(wire
+		(pts
+			(xy 228.6 69.85) (xy 233.68 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bde963fd-f865-4791-9da5-ddaa901a23fa")
+	)
+	(wire
+		(pts
+			(xy 96.52 35.56) (xy 100.33 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +2059,87 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 83.82) (xy 44.45 83.82)
+			(xy 170.18 62.23) (xy 179.07 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3529471-9515-4e70-8c6d-f086d77679f6")
+	)
+	(wire
+		(pts
+			(xy 194.31 101.6) (xy 199.39 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5e85be1-eaab-4146-a0d8-28c51b2a7ce0")
+	)
+	(wire
+		(pts
+			(xy 189.23 62.23) (xy 189.23 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8126c14-4a7c-4a6a-8c3e-cecee997dd17")
+	)
+	(wire
+		(pts
+			(xy 160.02 41.91) (xy 160.02 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd878c3b-1d75-4ff4-8785-91ee2833c1dd")
+	)
+	(wire
+		(pts
+			(xy 170.18 57.15) (xy 170.18 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1b55c7c-ae8d-4881-a3de-03e4c667285a")
+	)
+	(wire
+		(pts
+			(xy 228.6 40.64) (xy 228.6 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dad294d7-89c4-4af3-908b-dbb69af07ff8")
+	)
+	(wire
+		(pts
+			(xy 175.26 101.6) (xy 184.15 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0cab435-3090-4104-a7b0-764532d3cfad")
+	)
+	(wire
+		(pts
+			(xy 228.6 76.2) (xy 228.6 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e565fa25-3be7-4604-bbd8-a109ff48740b")
+	)
+	(wire
+		(pts
+			(xy 58.42 83.82) (xy 66.04 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1202,7 +2149,17 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 76.2) (xy 77.47 76.2)
+			(xy 261.62 34.29) (xy 266.7 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e63e1130-f3e6-4b6c-8f19-dda21da7e307")
+	)
+	(wire
+		(pts
+			(xy 91.44 76.2) (xy 99.06 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1210,8 +2167,78 @@
 		)
 		(uuid "e682a66b-9c71-48d1-abc5-8aef315c788c")
 	)
+	(wire
+		(pts
+			(xy 261.62 34.29) (xy 261.62 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8028245-ee47-4aaf-9a7d-2f49e9649127")
+	)
+	(wire
+		(pts
+			(xy 175.26 29.21) (xy 175.26 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee0d1fe7-5d92-4938-bd98-e22425954656")
+	)
+	(wire
+		(pts
+			(xy 160.02 35.56) (xy 160.02 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4bb70bd-ce2b-4874-9fbc-8362e3fbad5f")
+	)
+	(wire
+		(pts
+			(xy 228.6 101.6) (xy 228.6 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5605b86-fecb-45a7-b076-4070476b11ea")
+	)
+	(wire
+		(pts
+			(xy 140.97 35.56) (xy 149.86 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f56e5c80-dd5a-489b-852a-2dbd959891af")
+	)
+	(wire
+		(pts
+			(xy 140.97 97.79) (xy 140.97 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9a2ae9-827f-4d04-b8aa-d5ad507eb8f9")
+	)
+	(wire
+		(pts
+			(xy 160.02 102.87) (xy 165.1 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff977bc8-4601-44d9-b07a-ca55f41dfa01")
+	)
 	(label "TSLA"
-		(at 44.45 76.2 180)
+		(at 66.04 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1221,7 +2248,7 @@
 		(uuid "2a22b1cd-f2a1-4ea8-a987-ea5e562e877c")
 	)
 	(label "TSRA"
-		(at 43.18 33.02 180)
+		(at 64.77 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1231,7 +2258,7 @@
 		(uuid "3e8ba038-0f65-41b7-8db0-33709a049c85")
 	)
 	(label "TSLB"
-		(at 77.47 83.82 180)
+		(at 99.06 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1241,7 +2268,7 @@
 		(uuid "41dc1ace-7250-4d13-b0ab-cffc983a05b3")
 	)
 	(label "TSLA"
-		(at 77.47 73.66 180)
+		(at 99.06 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1251,7 +2278,7 @@
 		(uuid "6997f106-2450-44a8-87d8-1c4c001b4116")
 	)
 	(label "TSRA"
-		(at 74.93 30.48 180)
+		(at 96.52 30.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1261,7 +2288,7 @@
 		(uuid "d5918dd1-ba2d-4cf0-acc5-4224038ec3d5")
 	)
 	(label "TSRB"
-		(at 74.93 40.64 180)
+		(at 96.52 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1271,7 +2298,7 @@
 		(uuid "e072e8c4-ee3a-4751-9459-e219f69a52a4")
 	)
 	(label "TSLB"
-		(at 44.45 86.36 180)
+		(at 66.04 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1281,7 +2308,7 @@
 		(uuid "eb2632dc-18c6-4378-b3c7-7dc0fdd7f365")
 	)
 	(label "TSRB"
-		(at 43.18 43.18 180)
+		(at 64.77 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1292,7 +2319,7 @@
 	)
 	(hierarchical_label "Thumb_SW_R"
 		(shape output)
-		(at 85.09 33.02 0)
+		(at 111.76 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1301,9 +2328,20 @@
 		)
 		(uuid "28f5b510-cce4-4fc9-b6dc-09d9435adc16")
 	)
+	(hierarchical_label "BTN.X"
+		(shape output)
+		(at 233.68 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2aa49380-a351-472a-bbb1-347ba1e8072d")
+	)
 	(hierarchical_label "Thumb_L.X"
 		(shape output)
-		(at 31.75 91.44 180)
+		(at 29.21 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1312,9 +2350,42 @@
 		)
 		(uuid "33a50383-25c7-44a7-973e-c96fc800c8f3")
 	)
+	(hierarchical_label "DPAD.N"
+		(shape output)
+		(at 163.83 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3c107f59-62f6-4b90-92f4-0494568f2e60")
+	)
+	(hierarchical_label "BTN.A"
+		(shape output)
+		(at 165.1 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5e8b52ba-7f81-4057-b650-f897c871e41a")
+	)
+	(hierarchical_label "BTN.L1"
+		(shape output)
+		(at 199.39 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6aa3aa45-44dd-411a-8905-d107264108f4")
+	)
 	(hierarchical_label "Thumb_R.Y"
 		(shape output)
-		(at 30.48 38.1 180)
+		(at 27.94 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1325,7 +2396,7 @@
 	)
 	(hierarchical_label "Thumb_SW_L"
 		(shape output)
-		(at 90.17 76.2 0)
+		(at 111.76 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1334,9 +2405,20 @@
 		)
 		(uuid "74535af8-b502-4164-ab1e-b3e7174bb49a")
 	)
+	(hierarchical_label "BTN.Y"
+		(shape output)
+		(at 266.7 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91782447-ac35-485b-9186-3d6beb27e283")
+	)
 	(hierarchical_label "Thumb_L.Y"
 		(shape output)
-		(at 31.75 81.28 180)
+		(at 29.21 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1347,7 +2429,7 @@
 	)
 	(hierarchical_label "Thumb_R.X"
 		(shape output)
-		(at 30.48 48.26 180)
+		(at 27.94 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1356,18 +2438,154 @@
 		)
 		(uuid "aafc442b-03e6-4f9b-9097-2f6fb0357355")
 	)
+	(hierarchical_label "BTN.PS"
+		(shape output)
+		(at 165.1 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b154557e-ad10-4e6b-a699-d684ef1a1016")
+	)
+	(hierarchical_label "DPAD.E"
+		(shape output)
+		(at 261.62 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b557c802-e37e-4adb-b284-1cdffbdffff9")
+	)
+	(hierarchical_label "DPAD.W"
+		(shape output)
+		(at 233.68 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7745715-b2f6-486a-8ecc-dc14a5387df4")
+	)
+	(hierarchical_label "DPAD.S"
+		(shape output)
+		(at 194.31 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e48910ea-a972-440e-8849-d9a814081836")
+	)
+	(hierarchical_label "BTN.R1"
+		(shape output)
+		(at 233.68 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed2c49ef-013d-4b2f-8437-cd472b9cda52")
+	)
+	(hierarchical_label "BTN.B"
+		(shape output)
+		(at 199.39 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f04f073b-f7e5-400f-9a5f-0d98df6a60dc")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "006a980b-5465-4832-85c5-2440220f6658")
+		(property "Reference" "C16"
+			(at 36.83 49.5362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 36.83 52.0762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "579632fb-363f-4d10-acbd-ba0bd85aeb5e")
+		)
+		(pin "2"
+			(uuid "df36e5cb-3174-4fc8-b80f-4d645ca69674")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 50.8 270)
+		(at 160.02 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "06bf72ed-f853-47cf-ab14-3f21106fcfa0")
-		(property "Reference" "#PWR025"
-			(at 36.83 50.8 0)
+		(uuid "042d589a-811a-4375-8c3f-6da3562b0dee")
+		(property "Reference" "#PWR044"
+			(at 160.02 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1376,16 +2594,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 50.7999 90)
+			(at 160.02 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 50.8 0)
+			(at 160.02 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1394,7 +2611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 50.8 0)
+			(at 160.02 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +2620,74 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 50.8 0)
+			(at 160.02 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "985541fe-e3c0-4229-b9e7-61b1d0bce9d4")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06bf72ed-f853-47cf-ab14-3f21106fcfa0")
+		(property "Reference" "#PWR025"
+			(at 58.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1424,105 +2708,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 80.01 29.21 0)
+		(lib_id "power:GND")
+		(at 39.37 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d4fdbab-72ce-4040-81cb-109b04173d34")
-		(property "Reference" "R5"
-			(at 82.55 27.9399 0)
+		(uuid "091ce53b-4257-4908-895d-539423d6a329")
+		(property "Reference" "#PWR035"
+			(at 39.37 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "10k"
-			(at 82.55 30.4799 0)
+		(property "Value" "GND"
+			(at 42.418 89.154 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 78.232 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 80.01 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "257f765d-5e1e-4ad7-9dd8-7288ae92965c")
-		)
-		(pin "2"
-			(uuid "751e24d7-e65a-401a-b1fa-e9e61bcab4e4")
-		)
-		(instances
-			(project "GamingController"
-				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 34.29 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2010a5cd-3c22-4220-bc52-7acc40f685aa")
-		(property "Reference" "#PWR024"
-			(at 38.1 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 30.48 43.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 43.18 0)
+			(at 39.37 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1531,7 +2743,283 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 43.18 0)
+			(at 39.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c560136-4dad-4337-a6b2-fca84064057d")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 194.31 105.41 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ef43a47-a80e-46c7-ab8f-386b023afd4c")
+		(property "Reference" "R16"
+			(at 191.77 104.1399 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 191.77 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 194.31 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c9a3b90-a741-4b35-b774-bd77bfd46985")
+		)
+		(pin "1"
+			(uuid "8cc5ed09-1fe0-4e68-878f-730bcc081ee0")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 228.6 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ae29d27-8383-4f8f-bf6f-e5372b546df0")
+		(property "Reference" "R13"
+			(at 226.06 72.3899 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 226.06 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 228.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "92804391-8e61-41b9-849b-8a20ada5e4e6")
+		)
+		(pin "1"
+			(uuid "38f7f28f-4ef6-402a-988a-fcf9b7583edd")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 160.02 113.03 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1cef5c40-417b-4a86-a1e0-3d112a34792d")
+		(property "Reference" "C26"
+			(at 157.48 111.7662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 157.48 114.3062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 160.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d9e8ab4-e673-406b-9b10-f55b76cef8d7")
+		)
+		(pin "2"
+			(uuid "3608baff-184c-4266-b66c-0501653b20f7")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 54.61 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2010a5cd-3c22-4220-bc52-7acc40f685aa")
+		(property "Reference" "#PWR024"
+			(at 58.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 50.8 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1540,7 +3028,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 34.29 43.18 0)
+			(at 54.61 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1561,17 +3049,430 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 44.45 93.98 270)
+		(lib_id "Switch:SW_Push")
+		(at 189.23 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "38e52159-9d64-4d71-807b-87715c786fc8")
-		(property "Reference" "#PWR030"
-			(at 38.1 93.98 0)
+		(uuid "26242e94-14da-4847-abf7-8d2a4d3ef1ef")
+		(property "Reference" "SW11"
+			(at 189.23 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 189.23 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 189.23 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 189.23 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "089ad06e-c0ef-4e7f-a199-a2b89a16fa2c")
+		)
+		(pin "2"
+			(uuid "6121cbee-5804-4c7c-912d-5b800e32346e")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 194.31 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26745cb9-6cf8-410b-a035-9c4aaf9fdea5")
+		(property "Reference" "C27"
+			(at 191.77 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 191.77 113.0362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 194.31 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "279a9978-77c4-477d-9d25-f0fb51b62bc8")
+		)
+		(pin "2"
+			(uuid "e7965903-f90b-4829-aeff-0d824e5f46fe")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 160.02 106.68 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b4d063a-e3df-4b66-aa49-888044796674")
+		(property "Reference" "R15"
+			(at 157.48 105.4099 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 157.48 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c560e3f-cbce-41f8-bdea-5ac1e87dd7e4")
+		)
+		(pin "1"
+			(uuid "4a9d8e83-9881-4c07-aad2-e5b9d5ee837d")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 154.94 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bac792c-6841-4670-bb34-c4883880fac4")
+		(property "Reference" "SW10"
+			(at 154.94 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 154.94 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ef0465f-1791-4e48-b96e-c305803911ca")
+		)
+		(pin "2"
+			(uuid "767189f9-e837-4112-81ab-ae4a27010472")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 228.6 80.01 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e728ea3-04c9-4fc6-8ac6-13f08baf7e8b")
+		(property "Reference" "C24"
+			(at 226.06 78.7462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 226.06 81.2862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4cccb9c-007d-47ac-9d5d-0ce458a8b94d")
+		)
+		(pin "2"
+			(uuid "1813f498-09bb-4b82-a040-e9282c6bb179")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 154.94 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f7470a1-803d-4752-a320-a9a85c0e4af4")
+		(property "Reference" "SW2"
+			(at 154.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 154.94 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 154.94 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 154.94 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "095b5931-65bd-449a-8daa-f767ea9df3db")
+		)
+		(pin "2"
+			(uuid "1ea591db-a50f-4bc3-b6ae-091066ab2c9e")
+		)
+		(instances
+			(project ""
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30a320fb-28fd-4e55-970f-b3e2fd7165c5")
+		(property "Reference" "#PWR033"
+			(at 39.37 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1580,16 +3481,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 93.9799 90)
+			(at 42.418 45.974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 93.98 0)
+			(at 39.37 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1598,7 +3498,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 93.98 0)
+			(at 39.37 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1607,7 +3507,208 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 93.98 0)
+			(at 39.37 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bf7aeb8-d51c-4a93-b24d-84f150efa187")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 209.55 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38389505-2f58-4bbf-9179-3b9558ee406c")
+		(property "Reference" "#PWR047"
+			(at 209.55 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 209.55 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 209.55 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e55f64d-1fc5-4826-9cd3-f62f8caa5c4e")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 223.52 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38468951-d5d2-41df-a90a-119bcf239786")
+		(property "Reference" "SW12"
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 223.52 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 223.52 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2536503-4857-4750-a6eb-40db91cd6d4a")
+		)
+		(pin "2"
+			(uuid "7c453d6f-2f5d-4496-b3f7-499e9dc03a80")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38e52159-9d64-4d71-807b-87715c786fc8")
+		(property "Reference" "#PWR030"
+			(at 59.69 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.23 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1628,17 +3729,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 43.18 78.74 270)
+		(lib_id "power:+3V3")
+		(at 237.49 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4d82db16-b052-4e8e-b2e0-3237f54619ee")
-		(property "Reference" "#PWR027"
-			(at 36.83 78.74 0)
+		(uuid "3bc40377-624b-47d5-ae32-114c6479ab12")
+		(property "Reference" "#PWR049"
+			(at 237.49 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1646,17 +3747,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 39.37 78.7399 90)
+		(property "Value" "+3V3"
+			(at 237.49 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 78.74 0)
+			(at 237.49 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +3765,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 78.74 0)
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2535a751-3efd-4944-aafa-6c36915fe0eb")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 189.23 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3db9a91e-7b86-4be5-bc50-1dc2e06adc71")
+		(property "Reference" "#PWR046"
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +3840,206 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 78.74 0)
+			(at 189.23 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a6ae58c-350a-4ff4-9e08-92c4ee5ba5c2")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 209.55 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e9215b7-8019-44c1-9c8c-d72f569b7c41")
+		(property "Reference" "#PWR039"
+			(at 209.55 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 209.55 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 209.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b688473a-bf42-4d40-9f43-061958b373ff")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 209.55 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48a32224-e1fb-40b0-93e7-288533545c6e")
+		(property "Reference" "#PWR055"
+			(at 209.55 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 209.55 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 209.55 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f4c0cae-c1af-4774-9b0d-3cbf35148af5")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 78.74 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d82db16-b052-4e8e-b2e0-3237f54619ee")
+		(property "Reference" "#PWR027"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1696,7 +4061,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 80.01 25.4 0)
+		(at 101.6 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1705,7 +4070,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f3f3c4d-9084-4513-9e22-d000a093a995")
 		(property "Reference" "#PWR021"
-			(at 80.01 29.21 0)
+			(at 101.6 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1714,7 +4079,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 80.01 20.32 0)
+			(at 101.6 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1722,7 +4087,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 25.4 0)
+			(at 101.6 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1731,7 +4096,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 25.4 0)
+			(at 101.6 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,7 +4105,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 80.01 25.4 0)
+			(at 101.6 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1762,7 +4127,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 82.55 67.31 0)
+		(at 104.14 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1771,7 +4136,7 @@
 		(fields_autoplaced yes)
 		(uuid "51f9f916-5ec9-4da7-ac32-06d9b62e360c")
 		(property "Reference" "#PWR026"
-			(at 82.55 71.12 0)
+			(at 104.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1780,7 +4145,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 82.55 62.23 0)
+			(at 104.14 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1788,7 +4153,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 67.31 0)
+			(at 104.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1797,7 +4162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 67.31 0)
+			(at 104.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1806,7 +4171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 82.55 67.31 0)
+			(at 104.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,16 +4193,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 78.74 0)
+		(at 256.54 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "683e3eae-9fdb-49c8-9534-191f8397a45b")
-		(property "Reference" "#PWR028"
-			(at 81.28 85.09 0)
+		(uuid "52b8cac3-9e76-4631-9b9a-77e646d84d42")
+		(property "Reference" "#PWR050"
+			(at 256.54 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +4211,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 83.82 0)
+			(at 256.54 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1854,7 +4219,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 78.74 0)
+			(at 256.54 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1863,7 +4228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 78.74 0)
+			(at 256.54 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1872,7 +4237,139 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 78.74 0)
+			(at 256.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea5bf377-aaa5-4d7d-9eb1-003dbd74dc01")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 261.62 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5968345a-be39-472e-96a9-351b8d288c59")
+		(property "Reference" "#PWR042"
+			(at 261.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b4aab5c-9766-42b2-80ab-b6dff6674e3d")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "683e3eae-9fdb-49c8-9534-191f8397a45b")
+		(property "Reference" "#PWR028"
+			(at 102.87 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,7 +4391,7 @@
 	)
 	(symbol
 		(lib_id "Thumbstick_RKJXV122400R:RKJXV122400R")
-		(at 43.18 33.02 0)
+		(at 64.77 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1903,7 +4400,7 @@
 		(fields_autoplaced yes)
 		(uuid "6aed7b1f-5c9d-4f39-a46f-20bbcde1770a")
 		(property "Reference" "S2"
-			(at 55.88 25.4 0)
+			(at 77.47 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,7 +4408,7 @@
 			)
 		)
 		(property "Value" "RKJXV122400R_R"
-			(at 55.88 27.94 0)
+			(at 77.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1919,7 +4416,7 @@
 			)
 		)
 		(property "Footprint" "Thumbstick_RKJXV122400R:RKJXV122400R"
-			(at 64.77 127.94 0)
+			(at 86.36 127.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +4426,7 @@
 			)
 		)
 		(property "Datasheet" "https://tech.alpsalpine.com/prod/e/html/multicontrol/potentiometer/rkjxk/rkjxv122400r.html"
-			(at 64.77 227.94 0)
+			(at 86.36 227.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1939,7 +4436,7 @@
 			)
 		)
 		(property "Description" "Multi Control Devices Potentiometer Type ThumbPointer (Stick Controller) RKJXV Series"
-			(at 43.18 33.02 0)
+			(at 64.77 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1948,7 +4445,7 @@
 			)
 		)
 		(property "Height" "18.95"
-			(at 64.77 427.94 0)
+			(at 86.36 427.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,7 +4455,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "ALPS Electric"
-			(at 64.77 527.94 0)
+			(at 86.36 527.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1968,7 +4465,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "RKJXV122400R"
-			(at 64.77 627.94 0)
+			(at 86.36 627.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1978,7 +4475,7 @@
 			)
 		)
 		(property "Mouser Part Number" "688-RKJXV122400R"
-			(at 64.77 727.94 0)
+			(at 86.36 727.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1988,7 +4485,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Alps-Alpine/RKJXV122400R?qs=GedFDFLaBXEbB%252ByoOVwLBg%3D%3D"
-			(at 64.77 827.94 0)
+			(at 86.36 827.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,7 +4495,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 64.77 927.94 0)
+			(at 86.36 927.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,7 +4505,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 64.77 1027.94 0)
+			(at 86.36 1027.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2018,7 +4515,7 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 43.18 33.02 0)
+			(at 64.77 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2083,17 +4580,366 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 41.91 35.56 270)
+		(lib_id "Device:R_Small")
+		(at 160.02 39.37 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "6dd357b4-b4b4-4ed2-b16d-c9d2d1e6c4f4")
+		(property "Reference" "R6"
+			(at 157.48 38.0999 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 157.48 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 160.02 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3c7d52ff-4e16-4a5e-bfde-ab2a5df135ce")
+		)
+		(pin "1"
+			(uuid "4b1cf723-c394-4dfa-811c-f78ee5671ec5")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 160.02 72.39 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ebdea5d-2d36-4f5f-85cd-5804bd0df50d")
+		(property "Reference" "R11"
+			(at 157.48 71.1199 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 157.48 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 160.02 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "91b83e05-5b04-4126-8ca0-ca6fb1000fdf")
+		)
+		(pin "1"
+			(uuid "6cd43d1b-72ce-49ea-b783-4ca8574ca38d")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 160.02 45.72 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7275505c-56ce-4cfd-8271-f71d88b4f67d")
+		(property "Reference" "C14"
+			(at 157.48 44.4562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 157.48 46.9962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 160.02 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6586ccaa-1387-4118-a99c-fca67d2e2ee5")
+		)
+		(pin "2"
+			(uuid "a18970d6-bf90-4048-9b23-c2ca89e3ba4c")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 93.98 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75d1783c-073e-435e-87cf-917d4966b1f6")
+		(property "Reference" "C18"
+			(at 36.83 92.7162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 36.83 95.2562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c41650c3-8537-4da3-8e65-69ffc0555d7d")
+		)
+		(pin "2"
+			(uuid "df5473db-60ac-4df0-b65c-f6c2b580417a")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 256.54 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a0a129f-4581-4526-829f-22e98e150e2c")
+		(property "Reference" "C25"
+			(at 254 72.3962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 254 74.9362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 256.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17636b00-604c-45de-a597-d17f836455fe")
+		)
+		(pin "2"
+			(uuid "100a8924-9e0c-4c42-b347-41b8837254e8")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "7aec3482-9f0d-4ee7-8960-2066bb63a100")
 		(property "Reference" "#PWR022"
-			(at 35.56 35.56 0)
+			(at 57.15 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,16 +4948,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 35.5599 90)
+			(at 58.166 35.306 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 35.56 0)
+			(at 63.5 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,7 +4965,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 35.56 0)
+			(at 63.5 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2129,7 +4974,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 35.56 0)
+			(at 63.5 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2150,8 +4995,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 261.62 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e80ffa7-ea74-4e53-b897-f62cd7c281d3")
+		(property "Reference" "R10"
+			(at 259.08 36.8299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 259.08 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 261.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 261.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b944356d-50ab-4d27-b066-d6922eef1ddf")
+		)
+		(pin "1"
+			(uuid "475736cb-2c50-4704-91c3-94811099e0be")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 78.74 35.56 0)
+		(at 100.33 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2160,7 +5075,7 @@
 		(fields_autoplaced yes)
 		(uuid "829673ba-5e38-4dbe-8713-3ee4f05e9e74")
 		(property "Reference" "#PWR023"
-			(at 78.74 41.91 0)
+			(at 100.33 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2169,7 +5084,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 40.64 0)
+			(at 100.33 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2177,7 +5092,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 35.56 0)
+			(at 100.33 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2186,7 +5101,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 35.56 0)
+			(at 100.33 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2195,7 +5110,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 35.56 0)
+			(at 100.33 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2216,26 +5131,26 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 35.56 86.36 90)
+		(lib_id "Device:C_Small")
+		(at 194.31 44.45 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c50eefbc-6fd6-40fb-b403-ca033582bbbe")
-		(property "Reference" "#PWR029"
-			(at 39.37 86.36 0)
+		(uuid "87a1f818-26b6-436a-bd60-4c3f3fb8bee7")
+		(property "Reference" "C19"
+			(at 191.77 43.1862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 31.75 86.3599 90)
+		(property "Value" "100n"
+			(at 191.77 45.7262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2244,7 +5159,76 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 86.36 0)
+			(at 194.31 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 194.31 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9b901db-1d10-49c6-9900-668c354b7e03")
+		)
+		(pin "2"
+			(uuid "f639782e-560a-43f5-8537-a52950eb327b")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87e09d6d-d598-4518-b77b-6f3db301d305")
+		(property "Reference" "#PWR037"
+			(at 160.02 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2253,7 +5237,211 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 86.36 0)
+			(at 160.02 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "225a9791-e53b-4c55-ab01-ee4775a169a3")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 251.46 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88de3fd0-e1f2-44d5-ac09-466c17ac2646")
+		(property "Reference" "SW9"
+			(at 251.46 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 251.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 251.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 251.46 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6432abec-4b04-4ab4-835f-fda67a2ae09a")
+		)
+		(pin "2"
+			(uuid "49fd6858-433e-4ec1-9de8-b79b006006e0")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 256.54 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92c5e786-876a-4d3a-9db3-f1f3da22ad36")
+		(property "Reference" "R14"
+			(at 254 66.0399 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 254 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 256.54 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3dd0a3f9-7b58-4824-81b7-da289ce5242d")
+		)
+		(pin "1"
+			(uuid "d0cc3b2c-80ee-4c36-9a75-a43587aace41")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 175.26 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93bf5428-40fd-49c4-91e0-73ecdbc8e6f2")
+		(property "Reference" "#PWR032"
+			(at 175.26 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 175.26 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2262,7 +5450,883 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 35.56 86.36 0)
+			(at 175.26 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e15014c1-0bf9-4606-8694-deb8a741675c")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96a48eef-b4d1-4d6d-aa9c-3f92770f1697")
+		(property "Reference" "#PWR052"
+			(at 160.02 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11d83445-113e-4658-ae64-3b79124bdeaf")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 242.57 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96a6d5d1-5902-4360-b0d2-7fc07cfe202d")
+		(property "Reference" "#PWR041"
+			(at 242.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 242.57 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 242.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2de797c4-e307-4549-b43b-e0f85a4167f7")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 194.31 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9862ccce-091a-4213-b3c3-bece824bdcc7")
+		(property "Reference" "#PWR038"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 194.31 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b458d119-1c09-47bf-80c9-15b464619648")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 189.23 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98c99666-6b07-4710-b846-248be3fd12b7")
+		(property "Reference" "SW3"
+			(at 189.23 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 189.23 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 189.23 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 189.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f822aa4-981e-4523-9897-ccd53b09a03e")
+		)
+		(pin "2"
+			(uuid "46be516f-aff6-4850-84e6-6e643715cd31")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 223.52 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6fc67cd-5fef-429a-a73c-873f54f2644e")
+		(property "Reference" "SW4"
+			(at 223.52 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 223.52 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 223.52 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 223.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11b0b980-64ab-403d-b28b-c1817475be27")
+		)
+		(pin "2"
+			(uuid "13e28ebe-069a-47c9-bd33-5ce490cc60fc")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 194.31 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7e1cc0a-be3e-4ae7-ba7d-d691630257e6")
+		(property "Reference" "#PWR054"
+			(at 194.31 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb1a0398-3440-45fb-b671-e62b632cd7cd")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 228.6 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abff3e0e-cbb4-452f-a9c5-87e5a63be591")
+		(property "Reference" "C28"
+			(at 226.06 110.4962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 226.06 113.0362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 228.6 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a342b36f-e31b-44e4-a88f-8f0cfd677ab9")
+		)
+		(pin "2"
+			(uuid "f9d483e2-fee6-48f4-bc7b-01d72fbec596")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 160.02 78.74 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae9bbb68-e187-4024-982c-50de8dfcb2b9")
+		(property "Reference" "C22"
+			(at 157.48 77.4762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 157.48 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf0237a3-d287-4da5-b989-3ebb82e82920")
+		)
+		(pin "2"
+			(uuid "95d1915a-2e5e-4313-8d1d-bac8abb552ed")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 140.97 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af93cb1b-1a48-4ba2-9ea8-14479c7c2a0b")
+		(property "Reference" "#PWR031"
+			(at 140.97 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 140.97 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 140.97 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22ca816f-915b-4f07-b031-539e17c8abaf")
+		)
+		(instances
+			(project ""
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b39bd6a6-dad5-40de-b9fc-859480155f8d")
+		(property "Reference" "#PWR034"
+			(at 39.37 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 42.418 56.134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2d56845-8e95-4de2-b554-6afa5fa96b91")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 154.94 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd106275-b23b-4238-a7cc-d597e0888daa")
+		(property "Reference" "SW6"
+			(at 154.94 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 154.94 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 154.94 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 154.94 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43984ada-1e52-4ae1-bf3c-87e4b8f380c1")
+		)
+		(pin "2"
+			(uuid "275b8957-b537-46d4-aab4-ea2517c99fbf")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 194.31 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0e63f88-3a28-4f4d-a7f3-b761a412b06c")
+		(property "Reference" "R8"
+			(at 191.77 36.8299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 191.77 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2bf2bdb-c91c-499b-9583-22160fd93653")
+		)
+		(pin "1"
+			(uuid "47dddff1-4672-48db-a0c0-8bb48187abe0")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 57.15 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c50eefbc-6fd6-40fb-b403-ca033582bbbe")
+		(property "Reference" "#PWR029"
+			(at 60.96 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 53.34 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 57.15 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2283,35 +6347,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 82.55 71.12 0)
+		(lib_id "power:+3V3")
+		(at 140.97 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee04b72e-c97e-431c-ad9b-6c4086950207")
-		(property "Reference" "R6"
-			(at 85.09 69.8499 0)
+		(uuid "c5e97f29-40c7-46c7-a665-5fe76b6f55d5")
+		(property "Reference" "#PWR051"
+			(at 140.97 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "10k"
-			(at 85.09 72.3899 0)
+		(property "Value" "+3V3"
+			(at 140.97 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 80.772 71.12 90)
+			(at 140.97 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2319,8 +6382,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 82.55 71.12 0)
+		(property "Datasheet" ""
+			(at 140.97 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2328,8 +6391,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 82.55 71.12 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 140.97 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2338,15 +6401,1243 @@
 			)
 		)
 		(pin "1"
-			(uuid "990d138d-f1de-4f9a-ae19-2777f0f57f31")
+			(uuid "9fde2fa7-276b-4dc9-85c5-608d687636e8")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 189.23 72.39 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6d34cdc-ba96-4fc7-8258-810fd0d1e6c1")
+		(property "Reference" "C23"
+			(at 186.69 71.1262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 186.69 73.6662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bcc8eb17-30bc-4e66-8495-0f3b9bd65a11")
 		)
 		(pin "2"
-			(uuid "6236eb2c-e38f-4e43-82f7-5016e19d8517")
+			(uuid "4bd04bd3-5f58-4580-8004-a5d096d9c5f5")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 40.64 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2f1e5da-02aa-4672-83a1-ca42e67d1e45")
+		(property "Reference" "C15"
+			(at 36.83 39.3762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 36.83 41.9162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d850393-2b42-45cd-a8b0-6e1ffc55358f")
+		)
+		(pin "2"
+			(uuid "c0eb6f44-7dae-4f4d-93f0-b1364dd7e434")
 		)
 		(instances
 			(project ""
 				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
-					(reference "R6")
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 228.6 105.41 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d36f7a39-674f-4259-add6-70c216e801cc")
+		(property "Reference" "R17"
+			(at 226.06 104.1399 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 226.06 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 228.6 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5234c2f8-e89b-4442-ac41-054690bf21c3")
+		)
+		(pin "1"
+			(uuid "fe239fb3-e49c-4680-92c2-b051be7ca113")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d94f1515-da71-42c3-850e-e70de6132e31")
+		(property "Reference" "#PWR048"
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96fd3226-0ec9-4f74-bf62-0a465fe818ed")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 140.97 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc8b2fc7-2bf6-4f7a-aad6-e29663e462ca")
+		(property "Reference" "#PWR043"
+			(at 140.97 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 140.97 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0dcc602-73a1-4d1f-a59a-23b7e2ff0fc0")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 104.14 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfaef9eb-e1b4-4f7e-9c8f-d185e7853b09")
+		(property "Reference" "R7"
+			(at 106.68 69.8499 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 106.68 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 104.14 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f3e8ba1-fadf-413a-9015-d3d4cf57c42d")
+		)
+		(pin "1"
+			(uuid "dee1ff85-84c1-4144-8f7e-dfe25154c3da")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 256.54 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfbe2faa-05a3-4011-8109-22752b3c338f")
+		(property "Reference" "SW5"
+			(at 256.54 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 256.54 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 256.54 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 256.54 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "979733fd-2d5c-40d5-8517-3dc44cdb7c35")
+		)
+		(pin "2"
+			(uuid "76841265-0af2-466c-981c-d25a8ebb5f9a")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 228.6 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef3b2ada-fcc5-460a-ab9f-24a34feb18f7")
+		(property "Reference" "R9"
+			(at 226.06 36.8299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 226.06 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bef56411-4c93-4a3e-b260-d1cea87e7695")
+		)
+		(pin "1"
+			(uuid "7efffc4e-0e71-4125-bba8-9a94acbf4d95")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 170.18 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f13094c7-fd5d-4992-85d5-8446ec40ff99")
+		(property "Reference" "#PWR045"
+			(at 170.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 170.18 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 170.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9c335cb-2f24-4888-ab46-4230f718a164")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 101.6 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f322f106-33e7-4a5e-9843-d0a7082d3b27")
+		(property "Reference" "R5"
+			(at 104.14 26.6699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 104.14 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d6007ae9-6a49-4b2a-aa95-edecf36a238d")
+		)
+		(pin "1"
+			(uuid "043828dc-1dd3-44ca-ad2f-a35fb03b245f")
+		)
+		(instances
+			(project ""
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 175.26 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3d295a9-6410-4999-9cea-f52b6b7d9aba")
+		(property "Reference" "#PWR053"
+			(at 175.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 175.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 175.26 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a044b538-274c-4adc-aa08-124279b48e97")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f442591a-1cb1-4067-a666-7259f891463f")
+		(property "Reference" "#PWR056"
+			(at 228.6 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e2b2ebe-0d3d-44f9-87d9-b636fa55c3d4")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 184.15 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9607b56-1203-4e15-91a2-f636e461392d")
+		(property "Reference" "SW7"
+			(at 184.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 184.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 184.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 184.15 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39ef5827-5f7d-4c89-b79b-5d1dd2ee9fed")
+		)
+		(pin "2"
+			(uuid "2fa36d04-23f1-49c5-bb89-de12fa81e93a")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 261.62 44.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f9b218ef-1541-4475-940a-f0448149f044")
+		(property "Reference" "C21"
+			(at 259.08 43.1862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 259.08 45.7262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 261.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 261.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "948040a6-4b7b-4d9f-9580-f3b262a53d7b")
+		)
+		(pin "2"
+			(uuid "41824797-9374-469e-b05e-54418f439613")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 228.6 44.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa95d7a4-cf8f-405e-81ff-635ff7c6e75f")
+		(property "Reference" "C20"
+			(at 226.06 43.1862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 226.06 45.7262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f06a5d8a-55b2-404d-a8e3-d0395efe6b65")
+		)
+		(pin "2"
+			(uuid "379e811e-5118-4234-86f6-92e3a10b72d3")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 83.82 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb565afc-ded7-4ff3-aaab-2636d952ba7d")
+		(property "Reference" "C17"
+			(at 36.83 82.5562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 36.83 85.0962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f85fad3-3208-48ab-acbe-d919a489070a")
+		)
+		(pin "2"
+			(uuid "82e578a7-9011-4d01-9332-700767ac9d82")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc5d8b76-17dd-4cf8-b005-c740642be9e1")
+		(property "Reference" "#PWR036"
+			(at 39.37 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 42.418 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6183d26f-84f2-4a5a-bdc6-f7b564d61055")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 189.23 66.04 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc7dc4b9-2dde-47d2-8b57-452cf5e44157")
+		(property "Reference" "R12"
+			(at 186.69 64.7699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 186.69 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0acbb51a-bbe3-4890-b1d6-f342233c2ea7")
+		)
+		(pin "1"
+			(uuid "1b311b32-6377-4ff2-91b7-5cbdb4fd0f6f")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -2354,7 +7645,7 @@
 	)
 	(symbol
 		(lib_id "Thumbstick_RKJXV122400R:RKJXV122400R")
-		(at 44.45 76.2 0)
+		(at 66.04 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2363,7 +7654,7 @@
 		(fields_autoplaced yes)
 		(uuid "fcb18a06-5563-48bc-95f7-5d8cb1ef46f1")
 		(property "Reference" "S3"
-			(at 57.15 68.58 0)
+			(at 78.74 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2371,7 +7662,7 @@
 			)
 		)
 		(property "Value" "RKJXV122400R_R"
-			(at 57.15 71.12 0)
+			(at 78.74 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2379,7 +7670,7 @@
 			)
 		)
 		(property "Footprint" "Thumbstick_RKJXV122400R:RKJXV122400R"
-			(at 66.04 171.12 0)
+			(at 87.63 171.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2389,7 +7680,7 @@
 			)
 		)
 		(property "Datasheet" "https://tech.alpsalpine.com/prod/e/html/multicontrol/potentiometer/rkjxk/rkjxv122400r.html"
-			(at 66.04 271.12 0)
+			(at 87.63 271.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,7 +7690,7 @@
 			)
 		)
 		(property "Description" "Multi Control Devices Potentiometer Type ThumbPointer (Stick Controller) RKJXV Series"
-			(at 44.45 76.2 0)
+			(at 66.04 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2408,7 +7699,7 @@
 			)
 		)
 		(property "Height" "18.95"
-			(at 66.04 471.12 0)
+			(at 87.63 471.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,7 +7709,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "ALPS Electric"
-			(at 66.04 571.12 0)
+			(at 87.63 571.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2428,7 +7719,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "RKJXV122400R"
-			(at 66.04 671.12 0)
+			(at 87.63 671.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2438,7 +7729,7 @@
 			)
 		)
 		(property "Mouser Part Number" "688-RKJXV122400R"
-			(at 66.04 771.12 0)
+			(at 87.63 771.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2448,7 +7739,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Alps-Alpine/RKJXV122400R?qs=GedFDFLaBXEbB%252ByoOVwLBg%3D%3D"
-			(at 66.04 871.12 0)
+			(at 87.63 871.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,7 +7749,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 66.04 971.12 0)
+			(at 87.63 971.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,7 +7759,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 66.04 1071.12 0)
+			(at 87.63 1071.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +7769,7 @@
 			)
 		)
 		(property "Purpose" ""
-			(at 44.45 76.2 0)
+			(at 66.04 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,6 +7828,140 @@
 			(project "GamingController"
 				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
 					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "feb93e3d-17c0-4df9-96be-0ca41704ac5a")
+		(property "Reference" "#PWR040"
+			(at 228.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bab1c05f-ebc0-4742-bacb-4c1ee0aa5dcb")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 223.52 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffa2247f-74ef-4f4f-a1e4-d80230ed7c71")
+		(property "Reference" "SW8"
+			(at 223.52 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 223.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 223.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "544d7178-993c-4da6-a42d-004a8d210185")
+		)
+		(pin "2"
+			(uuid "92b2c49e-8ea6-496a-b201-47cbd523df5d")
+		)
+		(instances
+			(project "GamingController"
+				(path "/56e2302d-d6df-4b00-a36c-ac6d3c353abb/8c7c828c-f0a4-4a12-a4f4-414f08c1d01f"
+					(reference "SW8")
 					(unit 1)
 				)
 			)
