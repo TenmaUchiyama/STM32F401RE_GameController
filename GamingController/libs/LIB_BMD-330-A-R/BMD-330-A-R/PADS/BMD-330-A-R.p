@@ -1,0 +1,64 @@
+*PADS-LIBRARY-PART-TYPES-V9*
+
+BMD-330-A-R BMD330AR I ANA 7 1 0 0 0
+TIMESTAMP 2025.08.06.09.25.23
+"Mouser Part Number" 377-BMD-330-A-R
+"Mouser Price/Stock" https://www.mouser.co.uk/ProductDetail/u-blox/BMD-330-A-R?qs=wd5RIQLrsJi3NeBKYgZ5TQ%3D%3D
+"Manufacturer_Name" u-blox
+"Manufacturer_Part_Number" BMD-330-A-R
+"Description" MOD BLE 5.0 NORDIC NRF52810 SOC
+"Datasheet Link" https://www.u-blox.com/sites/default/files/BMD-330_DataSheet_%28UBX-19033352%29.pdf
+"Geometry.Height" 2mm
+GATE 1 47 0
+BMD-330-A-R
+1 0 U GND_1
+2 0 U GND_2
+3 0 U GND_3
+4 0 U GND_4
+5 0 U GND_5
+6 0 U P0.25
+7 0 U P0.26
+8 0 U P0.27
+9 0 U P0.28
+10 0 U P0.29
+11 0 U P0.30
+12 0 U P0.31
+13 0 U P0.00
+14 0 U P0.01
+15 0 U P0.02
+16 0 U GND_6
+17 0 U VCC
+18 0 U GND_7
+19 0 U P0.03
+20 0 U P0.04
+21 0 U P0.05
+22 0 U P0.06
+23 0 U P0.07
+24 0 U P0.08
+25 0 U P0.09
+26 0 U P0.10
+27 0 U P0.11
+28 0 U P0.12
+29 0 U GND_8
+30 0 U GND_9
+31 0 U P0.13
+32 0 U P0.14
+33 0 U P0.15
+34 0 U P0.16
+35 0 U P0.17
+36 0 U P0.18
+37 0 U P0.19
+38 0 U P0.20
+39 0 U P0.21
+40 0 U P0.22
+41 0 U P0.23
+42 0 U P0.24
+43 0 U SWCLK
+44 0 U SWDIO
+45 0 U GND_10
+46 0 U GND_11
+47 0 U GND_12
+
+*END*
+*REMARK* SamacSys ECAD Model
+11206702/1741529/2.50/47/0/Integrated Circuit

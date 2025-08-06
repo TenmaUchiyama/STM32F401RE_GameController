@@ -1,0 +1,16 @@
+.RK73B1ETTP103J :1 ;Thick Film Resistors - SMD 1/16watts 10Kohms 5%
+RESC1005X40N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN RK73B1ETTP103J
+~!TTI Part Number (-)
+~!TTI Price/Stock (-)
+~!Manufacturer_Name (KOA Speer)
+~!Manufacturer_Part_Number (RK73B1ETTP103J)
+~!Link Datasheet (http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf)
+~!Height (0.4mm)
+~!3D_Model (RK73B1ETTP103J)
+RK73B1ETTP103J
+1.1!U 2.1!U 

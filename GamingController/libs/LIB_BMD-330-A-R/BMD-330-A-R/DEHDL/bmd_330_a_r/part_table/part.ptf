@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BMD_330_A_R'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "u-blox", "BMD-330-A-R" (!) = "", "BMD330AR", "Other", "377-BMD-330-A-R", "https://www.mouser.co.uk/ProductDetail/u-blox/BMD-330-A-R?qs=wd5RIQLrsJi3NeBKYgZ5TQ%3D%3D", "MOD BLE 5.0 NORDIC NRF52810 SOC", "https://www.u-blox.com/sites/default/files/BMD-330_DataSheet_%28UBX-19033352%29.pdf", "2 mm"
+END_PART
+
+END.

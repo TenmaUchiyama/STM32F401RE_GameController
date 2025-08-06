@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RK73B1ETTP103J'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "TTI_PART_NUMBER", "TTI_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KOA Speer", "RK73B1ETTP103J" (!) = "", "RESC1005X40N", "Resistor Chip", "", "", "Thick Film Resistors - SMD 1/16watts 10Kohms 5%", "http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf", "0.4 mm"
+END_PART
+
+END.

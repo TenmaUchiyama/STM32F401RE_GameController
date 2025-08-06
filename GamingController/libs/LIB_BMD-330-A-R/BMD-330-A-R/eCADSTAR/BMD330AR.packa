@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "BMD-330-A-R"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-04-07-14:53:31)
+    (mountForm default
+        (footprintRef "BMD330AR")
+        (spec "System")
+    )
+)

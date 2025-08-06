@@ -1,0 +1,9 @@
+Manufacturer=KOA Speer
+PartNumber=RK73B1ETTP103J
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.2
+Released=2023-03-07 10:55:55
+Downloaded=2025-08-05 17:12:44
+3D=Y

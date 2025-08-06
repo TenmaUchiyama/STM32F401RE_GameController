@@ -1,0 +1,9 @@
+Manufacturer=u-blox
+PartNumber=BMD-330-A-R
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=47
+Version=1.5
+Released=2021-04-07 14:53:31
+Downloaded=2025-08-06 09:25:23
+3D=Y
