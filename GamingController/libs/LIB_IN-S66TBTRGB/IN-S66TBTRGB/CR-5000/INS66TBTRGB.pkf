@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "INS66TBTRGB"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "INS66TBTRGB")
+        (spec "default")
+    )
+)

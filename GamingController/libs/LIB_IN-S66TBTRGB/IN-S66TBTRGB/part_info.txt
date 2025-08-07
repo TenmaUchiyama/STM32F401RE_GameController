@@ -1,0 +1,9 @@
+Manufacturer=Inolux
+PartNumber=IN-S66TBTRGB
+PartCategory=LED
+PackageCategory=Other
+PinCount=4
+Version=1.1
+Released=2019-05-11 11:43:44
+Downloaded=2025-08-06 17:12:00
+3D=Y

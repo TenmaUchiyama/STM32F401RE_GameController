@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "IN-S66TBTRGB"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-05-11-11:43:44)
+    (mountForm default
+        (footprintRef "INS66TBTRGB")
+        (spec "System")
+    )
+)
